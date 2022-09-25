@@ -1,0 +1,13 @@
+spring:
+    kafka:
+        bootstrap-servers: localhost:9092
+        listener:
+          missing-topics-fatal: false
+        consumer:
+          group-id: demo 
+kafka:
+  input-topic: input-topic
+  output-topic: output-topic
+logging:
+  level:
+    com.kafka_stream_demo: INFO
